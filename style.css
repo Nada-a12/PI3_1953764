@@ -1,0 +1,58 @@
+*{
+    overflow: hidden;
+}
+body{
+    background-image: url("background.jpg");
+    background-size: cover;
+    width: 100%;
+}
+.titre{
+    text-align: center;
+    color: white;
+    margin: 60px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
+}
+.soustitre{
+    text-align: center;
+    color: white;
+    margin: 60px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+.button{
+    position: relative;
+    background-color: #3f3f3f7c;
+    border: 1px solid white;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Bebas Neue', cursive;
+    transition-duration: .4s;
+    -webkit-transition-duration: .4s;
+}
+button:hover{
+    background-color: #999999;
+    transition-duration: .4s;
+    -webkit-transition-duration: .4s;
+}
+button:focus{
+    outline: none;
+}
+.button-container{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: grid;
+}
+.button a{
+    text-decoration: none;
+    color: white
+}
