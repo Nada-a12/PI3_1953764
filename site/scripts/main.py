@@ -40,8 +40,6 @@ if faces_decoupees_liste is not None:
                 distance_faces_liste.append(distance)
 
             distance_minimale = min(distance_faces_liste)
-            pourcentage_distance = distance_minimale*100
-            pourcentage_distance = round(pourcentage_distance,5) 
             distance_minimale_label = distance_faces_liste.index(distance_minimale)
             label = vecteur_labels[distance_minimale_label]
 
@@ -50,11 +48,12 @@ if faces_decoupees_liste is not None:
             camera_enregistrement = image.copy()
 
             if distance_minimale<0.90:
-                vecteurcamera = cv2.putText(image, label+' '+str(pourcentage_distance)+'%', (coordonnees_face[0],coordonnees_face[1]), cv2.FONT_HERSHEY_TRIPLEX, .6, (0,0,255),1, cv2.LINE_AA)
+                vecteurcamera = cv2.putText(image, label, (coordonnees_face[0],coordonnees_face[1]), cv2.FONT_HERSHEY_TRIPLEX, .6, (0,0,255),1, cv2.LINE_AA)
                 vecteurcamera = cv2.rectangle(image, (coordonnees_face[0], coordonnees_face[1]), (coordonnees_face[2], coordonnees_face[3]), (0,255,0), 2)
                 cv2.imwrite('verify/resultat.jpg', vecteurcamera)
                 print('Bonjour, '+label+'!')
+                print(round(distance_minimale, 6))
             else:
-                print('Vous ne faites pas partie des personnes autorisées')
+                print('Vous ne faites pas partie des personnes autorisées.')
         else:
             print('Aucune face n\'a été détectée')
