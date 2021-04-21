@@ -16,7 +16,7 @@
         <p class="logo">PI3</p>
         <nav>
             <ul class="nav-area">
-                <li><a href="https://pi3nada.tk">Acceuil</a></li>
+                <li><a href="https://pi3nada.tk">Accueil</a></li>
                 <li><a href="#">Page principale</a></li>
                 <li><a href="about.html">À propos</a></li>
             </ul>
@@ -30,7 +30,7 @@
         <div id="photo"></div>
         <form action="scripts/upload.php" method="post">
             <input type="hidden" name="image" class="image-tag">
-            <input type="submit" value="Sauvgarder">
+            <input type="submit" value="Sauvegarder">
         </form>
         <button class="btn"><a href="scripts/exec.php">Exécuter</a></button>
     </div>
