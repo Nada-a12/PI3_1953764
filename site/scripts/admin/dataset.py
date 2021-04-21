@@ -10,6 +10,9 @@ import time
 import os
 import numpy as np
 from matplotlib import pyplot
+from PIL import ImageFile
+
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 # initialisation de mtcnn et de inceptionresnet
 mtcnnkeepfalse = MTCNN(image_size=240, margin=0, keep_all=False, min_face_size=40)

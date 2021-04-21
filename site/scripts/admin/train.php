@@ -13,7 +13,7 @@
         <p class="logo">PI3</p>
         <nav>
             <ul class="nav-area">
-                <li><a href="https://pi3nada.tk">Acceuil</a></li>
+                <li><a href="https://pi3nada.tk">Accueil</a></li>
                 <li><a href="../..">Page principale</a></li>
                 <li><a href="../../about.html">À propos</a></li>
             </ul>
